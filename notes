@@ -1,0 +1,10 @@
+The following might be helpful :-
+
+
+From the website omdbapi.com, in order to use your API, you might use :
+http://www.omdbapi.com/?apikey=[yourkey]&
+
+Please append it to all of your API requests,
+OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=e061ebe7
+
+https://www.omdbapi.com/?apikey=e061ebe7&t=[movie-name]

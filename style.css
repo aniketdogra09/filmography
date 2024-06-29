@@ -72,6 +72,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 0;
+    margin-left: 10px;
 }
 
 .movie-title{
@@ -122,4 +123,57 @@ body{
     margin-right: 5px;
 }
 
-  
+.movie-production{
+    background-color: rgba(0, 0, 0, 0.899);;
+}
+
+.movie-genre-list{
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.btn-movie-genre-list-item{
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid gray;
+    color: white;
+    font-size: 14px;
+    font-weight: 4px;
+    padding: 2.5px 6px;
+    margin-top: 10px;
+}
+
+.plot{
+    margin-left: 50px;
+    margin-right: 20px;
+    color: lightgray;
+    line-height: 1.8;
+}
+
+.production-details{
+    /* background-color: green; */
+}
+
+.list-of-production-details{
+    list-style-type: none;
+    margin-right: 32px;
+}
+
+.list-of-production-details-item{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 0.5px solid gray;
+}
+
+.list-of-production-details-item-header{
+    color: white;
+}
+
+.list-of-production-details-item-value{
+    color: lightgray;
+}

@@ -59,4 +59,67 @@ body{
     color: white;
 }
 
+.movie-ratings{
+    background-color: rgba(0, 0, 0, 0.899);
+    color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.movie-ratings-left-section{
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.movie-title{
+    /* background-color: orange; */
+    padding-left: 20px;
+    padding-right: 5px;
+    color:white;
+}
+
+.little-movie-details{
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+}
+
+.movie-ratings-right-section{
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+}
+
+.imdb-rating-section,.your-rating-section{
+    text-align: right;
+}
+
+.imdb-rating-section-header,.your-rating-section-header{
+    font-size: small;
+    font-weight: bold;
+}
+
+.imdb-rating-section-content,.your-rating-section-content{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.star-icon-imdb-rating{
+    height: 24px;
+    width: 24px;
+    margin-right: 5px;
+}
+
+.your-rating{
+    color: blueviolet;
+}
+
+.bi-star{
+    margin-right: 5px;
+}
+
   

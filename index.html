@@ -9,6 +9,8 @@
 
 </head>
 <body>
+
+
     <section class="header">
         <span class="logo roboto-slab roboto-medium">Filmography</span>
         <div class="search-container">
@@ -23,11 +25,66 @@
         </div>
     </section>
 
-    <div class="movie-ratings"></div>
 
-    <div class="movie-graphics"></div>
-    
-    <div class="movie-production"></div>
+    <div class="movie-ratings">
+
+        <div class="movie-ratings-left-section">
+            <h1 class="movie-tite" id="movie-title">Movie-Title</h1>
+        <ul class="little-movie-details">
+            <li class="little-movie-details-item" id="released-in">2024</li>
+            <li class="little-movie-details-item" id="rated">Not Rated</li>
+            <li class="little-movie-details-item" id="runtime">3h 7m</li>
+        </ul>
+        </div>
+
+        <div class="movie-ratings-right-section">
+            <div class="imdb-rating-section">
+                <p class="imdb-rating-section-header">IMDB RATING</p>
+                <span id="imdb-rating"><i class="star-icon star-icon-imdb-rating"></i>7.8/10</span>
+            </div>
+            <div class="your-rating-section">
+                <p class="your-rating-section-header">YOUR RATING</p>
+                <span id="your-rating"><i class="star-icon star-icon-my-rating"></i>Rate</span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="movie-graphics">
+
+        <div class="movie-poster">
+            <img src="" alt="movie-poster-not-available">
+        </div>
+
+        <div class="movie-trailer"></div>
+
+    </div>
+
+
+    <div class="movie-production">
+
+        <div class="movie-genre">
+            <ul class="movie-genre-list">
+                <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Action</button></li>
+                <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Adventure</button></li>
+                <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Drama</button></li>
+            </ul>
+        </div>
+
+        <div class="plot">
+            <p class="movie-plot" id="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis saepe recusandae aut similique facere quod.</p>
+        </div>
+
+        <div class="production-details">
+            <ul class="list-of-production-details">
+                <li><span><b>Director</b></span><P>Name</P></li>
+                <li><span><b>Writers</b></span><P>name1, name2</P></li>
+                <li><span><b>Actors</b></span><P>name1, name2, name3</P></li>
+            </ul>
+        </div>
+
+    </div>
+
 
     <script src="app.js"></script>
 </body>

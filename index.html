@@ -15,7 +15,7 @@
         <span class="logo roboto-slab roboto-medium">Filmography</span>
         <div class="search-container">
             <input type="text" placeholder="Search a movie . . ." class="search-box" id="search-box">
-            <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+            <button type="submit" class="search-button" id="search-button-id"><i class="fa fa-search"></i></button>
         </div>
         <div class=menu-container>
             <i class="menu-logo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-list" viewBox="0 0 16 16">
@@ -61,46 +61,48 @@
     <div class="movie-graphics">
 
         <div class="movie-poster">
-            <img src="">
+            <img src="assets/poster.jpg" class="poster-image" alt="poster-unavailable">
         </div>
 
-        <div class="movie-trailer"></div>
+        <!-- later on we can include a section here to display the trailer of the movie and move 'movie-production' to a separate div outside 'movie-graphics'-->
+
+        <div class="movie-production">
+
+            <div class="movie-genre">
+                <ul class="movie-genre-list">
+                    <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Action</button></li>
+                    <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Adventure</button></li>
+                    <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Drama</button></li>
+                </ul>
+            </div>
+    
+            <div class="plot">
+                <p class="movie-plot" id="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab sunt obcaecati veniam iusto totam quas tenetur at vel, beatae ex ad, voluptate sit in consequuntur. Tempora nihil, excepturi vitae veniam ab voluptatibus?</p>
+            </div>
+    
+            <div class="production-details">
+                <ul class="list-of-production-details">
+                    <li class="list-of-production-details-item">
+                        <span class="list-of-production-details-item-header"><b>Director</b></span>
+                        <P class="list-of-production-details-item-value">Name</P>
+                    </li>
+                    <li class="list-of-production-details-item">
+                        <span class="list-of-production-details-item-header"><b>Writers</b></span>
+                        <P class="list-of-production-details-item-value">name1, name2</P>
+                    </li>
+                    <li class="list-of-production-details-item">
+                        <span class="list-of-production-details-item-header"><b>Actors</b></span>
+                        <P class="list-of-production-details-item-value">name1, name2, name3</P>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
 
     </div>
 
 
-    <div class="movie-production">
-
-        <div class="movie-genre">
-            <ul class="movie-genre-list">
-                <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Action</button></li>
-                <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Adventure</button></li>
-                <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Drama</button></li>
-            </ul>
-        </div>
-
-        <div class="plot">
-            <p class="movie-plot" id="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab sunt obcaecati veniam iusto totam quas tenetur at vel, beatae ex ad, voluptate sit in consequuntur. Tempora nihil, excepturi vitae veniam ab voluptatibus?</p>
-        </div>
-
-        <div class="production-details">
-            <ul class="list-of-production-details">
-                <li class="list-of-production-details-item">
-                    <span class="list-of-production-details-item-header"><b>Director</b></span>
-                    <P class="list-of-production-details-item-value">Name</P>
-                </li>
-                <li class="list-of-production-details-item">
-                    <span class="list-of-production-details-item-header"><b>Writers</b></span>
-                    <P class="list-of-production-details-item-value">name1, name2</P>
-                </li>
-                <li class="list-of-production-details-item">
-                    <span class="list-of-production-details-item-header"><b>Actors</b></span>
-                    <P class="list-of-production-details-item-value">name1, name2, name3</P>
-                </li>
-            </ul>
-        </div>
-
-    </div>
+    
 
 
     <script src="app.js"></script>

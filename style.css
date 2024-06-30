@@ -5,7 +5,8 @@ body{
 
 .header{
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    gap: 148px;
     align-items: center;
     background-color: rgb(44, 44, 44);
     height: 56px;
@@ -19,6 +20,7 @@ body{
     border-radius: 6px;
     font-size: 16px;
     font-weight: bold;
+    margin-left: 48px;
 }
 
 .search-container{

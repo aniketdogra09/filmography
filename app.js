@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded',()=>{
         const movieWriters=document.getElementById('writers');
         const movieActors=document.getElementById('actors');
         const moviePoster=document.getElementById('poster-image-id');
+        const movieGenreContainer=document.getElementById('movie-genre-container');
+        const movieCountry=document.getElementById('country');
+        const movieLanguages=document.getElementById('languages');
+        const movieAwards=document.getElementById('awards');
 
         fetch(query).then((data)=>{
             return data.json();
@@ -32,6 +36,25 @@ document.addEventListener('DOMContentLoaded',()=>{
             movieWriters.innerText=data.Writer;
             movieActors.innerText=data.Actors;
             moviePoster.src=data.Poster;
+            movieCountry.innerText=data.Country;
+            movieLanguages.innerText=data.Language;
+            movieAwards.innerText=data.Awards;
+
+
+            const genres=data.Genre.split(',').map(genre=>genre.trim());
+            genres.forEach(genre=>{
+
+                const button=document.createElement('button');
+                button.classList.add('btn-movie-genre-list-item');
+                button.textContent=genre;
+
+                const listItem=document.createElement('li');
+                listItem.classList.add('movie-genre-list-item');
+
+                listItem.appendChild(button);
+                movieGenreContainer.appendChild(listItem);
+            });
+
         });
     });
 

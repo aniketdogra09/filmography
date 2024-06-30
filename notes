@@ -8,3 +8,5 @@ Please append it to all of your API requests,
 OMDb API: http://www.omdbapi.com/?i=tt3896198&apikey=e061ebe7
 
 https://www.omdbapi.com/?apikey=e061ebe7&t=[movie-name]
+
+remove menu,remove my-rating (or alter), add another field to production details and make genre-buttons functional.

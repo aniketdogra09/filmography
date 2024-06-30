@@ -17,23 +17,23 @@
             <input type="text" placeholder="Search a movie . . ." class="search-box" id="search-box">
             <button type="submit" class="search-button" id="search-button-id"><i class="fa fa-search"></i></button>
         </div>
-        <div class=menu-container>
+        <!-- <div class=menu-container>
             <i class="menu-logo"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
               </svg></i>
             <span class="menu-text">Menu</span>
-        </div>
+        </div> -->
     </section>
 
 
     <div class="movie-ratings">
 
         <div class="movie-ratings-left-section">
-            <h1 class="movie-title" id="movie-title">Movie-Title</h1>
+            <h1 class="movie-title" id="movie-title"></h1>
         <ul class="little-movie-details">
-            <li class="little-movie-details-item" id="released-in">2024</li>
-            <li class="little-movie-details-item" id="rated">Not Rated</li>
-            <li class="little-movie-details-item" id="runtime">3h 7m</li>
+            <li class="little-movie-details-item" id="released-in"></li>
+            <li class="little-movie-details-item" id="rated"></li>
+            <li class="little-movie-details-item" id="runtime"></li>
         </ul>
         </div>
 
@@ -42,10 +42,10 @@
                 <p class="imdb-rating-section-header">IMDB RATING</p>
                 <div class="imdb-rating-section-content">
                     <img src="assets/solid-star-image.png" class="star-icon-imdb-rating">
-                    <p class="imdb-rating" id="imdb-rating">7.8/10</p>
+                    <p class="imdb-rating" id="imdb-rating"></p>
                 </div>
             </div>
-            <div class="your-rating-section">
+            <!-- <div class="your-rating-section">
                 <p class="your-rating-section-header">YOUR RATING</p>
                 <div class="your-rating-section-content">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="blueviolet" class="bi bi-star" viewBox="0 0 16 16">
@@ -53,7 +53,7 @@
                     </svg>
                     <p class="your-rating" id="your-rating">Rate</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -61,7 +61,7 @@
     <div class="movie-graphics">
 
         <div class="movie-poster">
-            <img src="assets/poster.jpg" class="poster-image" alt="poster-unavailable" id="poster-image-id">
+            <img src="" class="poster-image" alt="poster-unavailable" id="poster-image-id">
         </div>
 
         <!-- later on we can include a section here to display the trailer of the movie and move 'movie-production' to a separate div outside 'movie-graphics'-->
@@ -69,30 +69,38 @@
         <div class="movie-production">
 
             <div class="movie-genre">
-                <ul class="movie-genre-list">
-                    <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Action</button></li>
-                    <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Adventure</button></li>
-                    <li class="movie-genre-list-item"><button class="btn-movie-genre-list-item">Drama</button></li>
-                </ul>
+                <ul class="movie-genre-list" id="movie-genre-container"></ul>
             </div>
     
             <div class="plot">
-                <p class="movie-plot" id="movie-plot-id">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab sunt obcaecati veniam iusto totam quas tenetur at vel, beatae ex ad, voluptate sit in consequuntur. Tempora nihil, excepturi vitae veniam ab voluptatibus?</p>
+                <p class="movie-plot" id="movie-plot-id"></p>
             </div>
     
             <div class="production-details">
                 <ul class="list-of-production-details">
                     <li class="list-of-production-details-item">
+                        <span class="list-of-production-details-item-header"><b>Country</b></span>
+                        <P class="list-of-production-details-item-value" id="country"></P>
+                    </li>
+                    <li class="list-of-production-details-item">
+                        <span class="list-of-production-details-item-header"><b>Languages</b></span>
+                        <P class="list-of-production-details-item-value" id="languages"></P>
+                    </li>
+                    <li class="list-of-production-details-item">
                         <span class="list-of-production-details-item-header"><b>Director</b></span>
-                        <P class="list-of-production-details-item-value" id="director">Name</P>
+                        <P class="list-of-production-details-item-value" id="director"></P>
                     </li>
                     <li class="list-of-production-details-item">
                         <span class="list-of-production-details-item-header"><b>Writers</b></span>
-                        <P class="list-of-production-details-item-value" id="writers">name1, name2</P>
+                        <P class="list-of-production-details-item-value" id="writers"></P>
                     </li>
                     <li class="list-of-production-details-item">
                         <span class="list-of-production-details-item-header"><b>Actors</b></span>
-                        <P class="list-of-production-details-item-value" id="actors">name1, name2, name3</P>
+                        <P class="list-of-production-details-item-value" id="actors"></P>
+                    </li>
+                    <li class="list-of-production-details-item">
+                        <span class="list-of-production-details-item-header"><b>Awards</b></span>
+                        <P class="list-of-production-details-item-value" id="awards"></P>
                     </li>
                 </ul>
             </div>
